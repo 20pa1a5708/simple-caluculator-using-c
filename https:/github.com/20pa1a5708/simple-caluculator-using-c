@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+    char operater;
+    float a,b,result=0;
+    printf(" enter any operater +,-,*,/ : ");
+    scanf("%c",&operater);
+    printf(" enter tne two numbers ");
+    scanf("%f%f",&a,&b);
+   switch(operater)
+   {
+       case '+':
+       result=a+b;
+       break;
+       case '-':
+       result=a-b;
+       break;
+       case '*':
+       result=a*b;
+       break;
+       case '/':
+       result=a/b;
+       break;
+       default:
+       printf("something went wrong");
+   }
+   printf("%f",result);
+}
